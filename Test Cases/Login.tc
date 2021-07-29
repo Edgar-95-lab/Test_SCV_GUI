@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Acceder al sistema mediante el usuario de practicantes.</description>
+   <name>Login</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>492e4b3a-d8ed-4a2a-9256-6b240fcbd375</testCaseGuid>
+</TestCaseEntity>
