@@ -4,7 +4,7 @@
    <name>ConsultaXPlaca</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <mailRecipient></mailRecipient>
+   <mailRecipient>edgargv537@gmail.com;</mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
@@ -15,12 +15,12 @@
       <guid>0bf85415-68d5-4fa6-a25c-e29018a246a2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Login</testCaseId>
+      <testCaseId>Test Cases/Acceso/Login</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>581f6763-fcf6-43ee-a2fc-8b4f0ce51f28</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Cobros_CDFotoinfracciones</testCaseId>
+      <testCaseId>Test Cases/Cobros_CobDFotoinfrac/Cobros_CDFotoinfracciones</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
