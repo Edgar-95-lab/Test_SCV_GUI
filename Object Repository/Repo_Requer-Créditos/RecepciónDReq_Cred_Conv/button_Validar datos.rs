@@ -4,17 +4,26 @@
    <name>button_Validar datos</name>
    <tag></tag>
    <elementGuidId>b77f2adf-05cb-49d8-840a-2929d99c1bf2</elementGuidId>
+   <imagePath></imagePath>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[@type='button'])[2]</value>
+      </entry>
       <entry>
          <key>CSS</key>
          <value>button.btn.btn-outline-primary.pl-5.pr-5.mt-2</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='button'])[2]</value>
+         <key>BASIC</key>
+         <value>//*[@type = 'button' and (text() = 'Validar datos' or . = 'Validar datos')]</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
