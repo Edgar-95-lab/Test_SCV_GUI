@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Prueba automatizada para cargar un archivo en una o varias secciones.</description>
+   <name>Recep_Requer_Cred_Conv</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dedeb763-4ca8-45bf-8dc3-d8da46c96403</testCaseGuid>
+</TestCaseEntity>

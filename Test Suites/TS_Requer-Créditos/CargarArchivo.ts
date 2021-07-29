@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
-   <description>Se realiza una consulta por placa y en el listado que despliega en la parte inferior puede mostrarse que al dar clic en la última opción del botón seleccionar ocurre un error que no permite continuar con la ejecución del sistema.</description>
-   <name>ConsultaXPlaca</name>
+   <description>Prueba automatizada para cargar un archivo plano en el sistema.</description>
+   <name>CargarArchivo</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient>edgargv537@gmail.com;</mailRecipient>
@@ -10,17 +10,17 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>1407c19d-44f0-4658-8350-3aa3dd514bb4</testSuiteGuid>
+   <testSuiteGuid>217e5698-347f-4967-918a-9c9551d96546</testSuiteGuid>
    <testCaseLink>
-      <guid>0bf85415-68d5-4fa6-a25c-e29018a246a2</guid>
+      <guid>049274aa-a047-418c-89d9-acd79de1a9e7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Acceso/Login</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>581f6763-fcf6-43ee-a2fc-8b4f0ce51f28</guid>
+      <guid>8ca5fbab-953c-460a-b086-ea3552a369ce</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Cobros/Cobros_CDFotoinfracciones</testCaseId>
+      <testCaseId>Test Cases/Requer-Créditos/Recep_Requer_Cred_Conv</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
