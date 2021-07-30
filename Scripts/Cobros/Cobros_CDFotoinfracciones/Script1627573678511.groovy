@@ -17,16 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+CustomKeywords.'com.test.demo.CustomFuncions.Login'()
+
 WebUI.click(findTestObject('Repo_Cobros/SubCDFotoinfracciones/a_Cobros'))
 
 WebUI.click(findTestObject('Repo_Cobros/SubCDFotoinfracciones/a_Cobro de Fotoinfracciones'))
 
-WebUI.setText(findTestObject('Repo_Cobros/SubCDFotoinfracciones/input_Placa_vchPlacaConsulta'),
-	'761MM')
+WebUI.setText(findTestObject('Repo_Cobros/SubCDFotoinfracciones/input_Placa_vchPlacaConsulta'), '761MM')
 
 WebUI.click(findTestObject('Repo_Cobros/SubCDFotoinfracciones/button_Buscar'))
 
 WebUI.click(findTestObject('Repo_Cobros/SubCDFotoinfracciones/button_Seleccionar'))
 
-WebUI.verifyElementText(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/h1_Sistema de Control Vehicular'),
-	'Sistema de Control Vehicular')
+WebUI.verifyElementText(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/h1_Sistema de Control Vehicular'), 
+    'Sistema de Control Vehicular')
+

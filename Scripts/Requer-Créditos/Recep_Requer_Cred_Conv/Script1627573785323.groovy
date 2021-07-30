@@ -17,6 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+CustomKeywords.'com.test.demo.CustomFuncions.Login'()
+
 WebUI.click(findTestObject('Repo_Requer-Créditos/RecepciónDReq_Cred_Conv/a_Requer-Crditos'))
 
 WebUI.click(findTestObject('Repo_Requer-Créditos/RecepciónDReq_Cred_Conv/a_Comunicacin Ingres'))
@@ -36,4 +38,6 @@ WebUI.delay(2)
 
 WebUI.verifyElementText(findTestObject('Repo_Requer-Créditos/RecepciónDReq_Cred_Conv/h5_Ocurri un error en la lectura de los archivos, por favor verifique'), 
     '')
+
+WebUI.closeBrowser()
 

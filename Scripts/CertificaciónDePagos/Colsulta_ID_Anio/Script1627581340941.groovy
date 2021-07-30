@@ -17,6 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+CustomKeywords.'com.test.demo.CustomFuncions.Login'()
+
 WebUI.click(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/a_Certificacin de Pagos'))
 
 WebUI.verifyElementClickable(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/a_Certificacion de Pagos'))
@@ -44,4 +46,6 @@ WebUI.verifyElementPresent(findTestObject('Repo_CertificaciónDePagos/Page_Siste
 
 WebUI.verifyElementText(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/h3_Certificacin de Pagos'), 
     'No debe mostrarse este elemento')
+
+WebUI.closeBrowser()
 

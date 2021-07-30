@@ -12,12 +12,6 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>6a1eae95-6a8a-4d58-ab59-b857f6b85a49</testSuiteGuid>
    <testCaseLink>
-      <guid>c6bce4ab-9c4c-47a2-9837-695f459f28dd</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Acceso/Login</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>18b595ac-3610-4db2-a6bf-4b3720688e7d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
