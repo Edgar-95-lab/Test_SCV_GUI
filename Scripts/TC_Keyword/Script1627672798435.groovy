@@ -17,17 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+CustomKeywords.'com.test.demo.CustomFuncions.printHello'()
 
-WebUI.navigateToUrl(GlobalVariable.Url)
-
-WebUI.click(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/a_Ingresar'))
-
-WebUI.setText(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/input_Ingresar_inputUsuario'), GlobalVariable.User)
-
-WebUI.setText(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/input_Ingresar_inputPass'), GlobalVariable.Password)
-
-WebUI.click(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/button_Entrar'))
-
-WebUI.delay(3)
+CustomKeywords.'com.test.demo.CustomFuncions.printName'('Edgar')
 

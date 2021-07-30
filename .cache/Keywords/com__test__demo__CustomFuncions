@@ -1,0 +1,33 @@
+{
+  "keywordFileContentHash": "D517C89A8595CA248F4B28822D0D16B0",
+  "keywordClasses": [
+    {
+      "name": "com.test.demo.CustomFuncions",
+      "keywordMethods": [
+        {
+          "name": "printHello",
+          "parameters": []
+        },
+        {
+          "name": "printName",
+          "parameters": [
+            {
+              "name": "name",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

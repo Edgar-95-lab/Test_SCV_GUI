@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Ejemplo para ejecución de distintos keywords.</description>
+   <name>TC_Keyword</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>11fb3085-f100-485f-92eb-9a750bca3c0d</testCaseGuid>
+</TestCaseEntity>
