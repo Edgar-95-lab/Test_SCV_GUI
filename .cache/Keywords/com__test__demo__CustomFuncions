@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "D517C89A8595CA248F4B28822D0D16B0",
+  "keywordFileContentHash": "8DE4A1A8F4089C67FA2228B2B8DCA1F0",
   "keywordClasses": [
     {
       "name": "com.test.demo.CustomFuncions",
@@ -13,6 +13,41 @@
           "parameters": [
             {
               "name": "name",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "Login",
+          "parameters": []
+        },
+        {
+          "name": "ElementContains",
+          "parameters": [
+            {
+              "name": "to",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
+                "unresolvedClassName": "TestObject",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "cadena",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",

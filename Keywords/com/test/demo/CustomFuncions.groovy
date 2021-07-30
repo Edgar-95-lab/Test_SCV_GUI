@@ -14,6 +14,7 @@ import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testcase.TestCase
 import com.kms.katalon.core.testdata.TestData
 import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
@@ -40,9 +41,41 @@ public class CustomFuncions {
 	def printName(String name) {
 		println("Hola:" + name)
 	}
+
+	/**
+	 * Metodo para el logeo en cada prueba a automatizar
+	 */
+	@Keyword
+	public void Login() {
+
+		WebUI.openBrowser('')
+
+		WebUI.navigateToUrl(GlobalVariable.Url)
+
+		WebUI.click(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/a_Ingresar'))
+
+		WebUI.setText(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/input_Ingresar_inputUsuario'), GlobalVariable.User)
+
+		WebUI.setText(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/input_Ingresar_inputPass'), GlobalVariable.Password)
+
+		WebUI.click(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/button_Entrar'))
+
+		WebUI.delay(3)
+		
+	}
 	
 	/**
-	 * Refresh browser
+	 * Metodo que funciona como contains("Cadena")
 	 */
-	
+	@Keyword
+	public void ElementContains(TestObject to, String cadena) {
+
+		if (to.toString().contains(cadena)) {
+			//Marca el estado aprobado 
+			KeywordUtil.markPassed("éxito en el elemento")
+		}else {
+			//Marca el estado fallido
+			KeywordUtil.markFailed("El elemento no contiene la cadena señalada: " + cadena)
+		}
+	}
 }

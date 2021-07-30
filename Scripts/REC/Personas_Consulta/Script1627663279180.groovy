@@ -17,6 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+CustomKeywords.'com.test.demo.CustomFuncions.Login'()
+
 WebUI.click(findTestObject('Repo_REC/Page_Sistema de Control Vehicular/a_REC'))
 
 WebUI.click(findTestObject('Repo_REC/Page_Sistema de Control Vehicular/a_Personas'))
@@ -31,7 +33,8 @@ WebUI.click(findTestObject('Repo_REC/Page_Sistema de Control Vehicular/button_Mo
 
 WebUI.delay(2)
 
-WebUI.delay(2)
+CustomKeywords.'com.test.demo.CustomFuncions.ElementContains'(findTestObject('Repo_REC/Page_Sistema de Control Vehicular/button_Persona.-    Control 112609RFC MEGE870901LL6Nombre EDGAR MEDINA GAYTAN'), 
+    'EDGAR')
 
 WebUI.click(findTestObject('Repo_REC/Page_Sistema de Control Vehicular/button_Limpiar'))
 
@@ -67,9 +70,7 @@ WebUI.verifyElementText(findTestObject('Repo_REC/Page_Sistema de Control Vehicul
 
 CustomKeywords.'com.test.demo.FuncionesGUI.refreshBrowser'()
 
-WebUI.delay(10)
+WebUI.delay(3)
 
-WebUI.click(findTestObject('Repo_REC/Page_Sistema de Control Vehicular/a_REC'))
-
-WebUI.click(findTestObject('Repo_REC/Page_Sistema de Control Vehicular/a_Personas'))
+WebUI.closeBrowser()
 
