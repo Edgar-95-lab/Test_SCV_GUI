@@ -98,6 +98,21 @@ public class CustomFuncions {
 			KeywordUtil.markFailed("Error al hacer clic en el elemento")
 		}
 	}
+	
+	/**
+	 * Metodo para vefificar la ausencia de un objeto
+	 */
+	@Keyword
+	public void ElementIsF(TestObject tou) {
+
+		if (tou.cachedWebElement != null) {
+
+			KeywordUtil.markFailed("El elemento: " + tou + " NO debería estar presente")
+		}else {
+
+			KeywordUtil.markPassed("Éxito en la validación")
+		}
+	}
 
 	/**
 	 * Metodo para el logeo en cada prueba a automatizar
@@ -135,18 +150,5 @@ public class CustomFuncions {
 		}
 	}
 
-	/**
-	 * Metodo para vefificar la ausencia de un objeto
-	 */
-	@Keyword
-	public void ElementIsF(TestObject tou) {
-
-		if (tou.cachedWebElement != null) {
-
-			KeywordUtil.markFailed("El elemento: " + tou + " NO debería estar presente")
-		}else {
-
-			KeywordUtil.markPassed("Éxito en la validación")
-		}
-	}
+	
 }
