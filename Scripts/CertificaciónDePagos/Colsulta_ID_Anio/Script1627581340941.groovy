@@ -43,8 +43,6 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/button_Limpiar'))
 
-CustomKeywords.'com.kms.katalon.keyword.applitools.BasicKeywords.checkElement'(null, null)
-
 WebUI.verifyElementPresent(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/h3_Certificacin de Pagos'), 
     0)
 

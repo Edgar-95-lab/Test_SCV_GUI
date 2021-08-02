@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "7E17E13B435B70010749840E4EB06EA8",
+  "keywordFileContentHash": "D76D4D15AF9586BC7C0C7386245AF08C",
   "keywordClasses": [
     {
       "name": "com.test.demo.CustomFuncions",
@@ -27,6 +27,49 @@
             }
           ],
           "javadoc": "/**\r\n\t * Imprime un saluda más el nombre otorgado.\r\n\t * @param name es el nombre que entra como parámetro.\r\n\t * @return un saludo con nombre\r\n\t */"
+        },
+        {
+          "name": "refreshBrowser",
+          "parameters": [],
+          "javadoc": "/**\r\n\t * Recargar la página (función que se hace al presionar F5) \r\n\t */"
+        },
+        {
+          "name": "clickElement",
+          "parameters": [
+            {
+              "name": "to",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
+                "unresolvedClassName": "TestObject",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\r\n\t * Click element\r\n\t * @param Objecto capturado en algún repositorio\r\n\t */"
+        },
+        {
+          "name": "ElementIsF",
+          "parameters": [
+            {
+              "name": "tou",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
+                "unresolvedClassName": "TestObject",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\r\n\t * Metodo para vefificar la ausencia de un objeto\r\n\t */"
         },
         {
           "name": "Login",

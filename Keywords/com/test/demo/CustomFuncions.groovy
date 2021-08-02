@@ -91,6 +91,7 @@ public class CustomFuncions {
 			WebElement element = WebUiBuiltInKeywords.findWebElement(to);
 			KeywordUtil.logInfo("Clic")
 			element.click()
+			element.findElement(arg0)
 			KeywordUtil.markPassed("Se ha hecho clic en el elemento")
 		} catch (WebElementNotFoundException e) {
 			KeywordUtil.markFailed("Elemento no encontrado")
@@ -98,16 +99,18 @@ public class CustomFuncions {
 			KeywordUtil.markFailed("Error al hacer clic en el elemento")
 		}
 	}
-	
+
 	/**
 	 * Metodo para vefificar la ausencia de un objeto
 	 */
 	@Keyword
-	public void ElementIsF(TestObject tou) {
+	public void ElementIsF(TestObject to) {
+		
+		WebElement element = WebUiBuiltInKeywords.findWebElement(to);
 
-		if (tou.cachedWebElement != null) {
+		if (element != null) {
 
-			KeywordUtil.markFailed("El elemento: " + tou + " NO debería estar presente")
+			KeywordUtil.markFailed("El elemento: " + to + " NO debería estar presente")
 		}else {
 
 			KeywordUtil.markPassed("Éxito en la validación")
@@ -149,6 +152,4 @@ public class CustomFuncions {
 			KeywordUtil.markFailed("El elemento no contiene la cadena señalada: " + cadena)
 		}
 	}
-
-	
 }
