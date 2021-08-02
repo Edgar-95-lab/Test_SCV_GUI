@@ -139,7 +139,7 @@ public class CustomFuncions {
 	 * Metodo para vefificar la ausencia de un objeto
 	 */
 	@Keyword
-	public void ElementIsFind(TestObject tou) {
+	public void ElementIsF(TestObject tou) {
 
 		if (tou.cachedWebElement != null) {
 
