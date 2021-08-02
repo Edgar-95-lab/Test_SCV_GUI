@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "D76D4D15AF9586BC7C0C7386245AF08C",
+  "keywordFileContentHash": "05770132759ABBC8BAAC5E87B0FC901E",
   "keywordClasses": [
     {
       "name": "com.test.demo.CustomFuncions",
@@ -56,7 +56,7 @@
           "name": "ElementIsF",
           "parameters": [
             {
-              "name": "tou",
+              "name": "to",
               "initialExpression": "",
               "type": {
                 "fullClassName": "com.kms.katalon.core.testobject.TestObject",

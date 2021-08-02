@@ -25,31 +25,53 @@ WebUI.verifyElementClickable(findTestObject('Repo_CertificaciónDePagos/Page_Sis
 
 WebUI.click(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/a_Certificacion de Pagos'))
 
-WebUI.delay(2)
-
 WebUI.setText(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/input_ID del vehculo_form-control valid'), 
     '40780')
 
 WebUI.setText(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/input_Ao del pago_form-control valid'), 
     '2021')
 
-WebUI.verifyElementClickable(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/button_Consultar'))
-
-CustomKeywords.'com.test.demo.FuncionesGUI.clickElement'(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/button_Consultar'))
+CustomKeywords.'com.test.demo.CustomFuncions.clickElement'(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/button_Consultar'))
 
 WebUI.click(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/button_Consultar'))
 
-WebUI.delay(2)
+WebUI.verifyElementPresent(findTestObject('Repo_Cobros/SubCDFotoinfracciones/button_Seleccionar'), 0)
 
 WebUI.click(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/button_Limpiar'))
 
-WebUI.verifyElementPresent(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/h3_Certificacin de Pagos'), 
+WebUI.verifyElementNotPresent(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/h3_Certificacin de Pagos'), 
     0)
 
-WebUI.verifyElementText(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/h3_Certificacin de Pagos'), 
-    'No debe mostrarse este elemento')
+WebUI.delay(2)
 
-WebUI.delay(3)
+WebUI.click(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/a_Inicio'))
+
+CustomKeywords.'com.test.demo.CustomFuncions.refreshBrowser'()
+
+WebUI.click(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/a_Certificacin de Pagos'))
+
+WebUI.verifyElementClickable(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/a_Certificacion de Pagos'))
+
+WebUI.click(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/a_Certificacion de Pagos'))
+
+WebUI.setText(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/input_ID del vehculo_form-control valid'),
+	'40780')
+
+WebUI.setText(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/input_Ao del pago_form-control valid'),
+	'2021')
+
+CustomKeywords.'com.test.demo.CustomFuncions.clickElement'(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/button_Consultar'))
+
+WebUI.click(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/button_Consultar'))
+
+WebUI.verifyElementPresent(findTestObject('Repo_Cobros/SubCDFotoinfracciones/button_Seleccionar'), 0)
+
+WebUI.click(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/button_Limpiar'))
+
+WebUI.verifyElementNotPresent(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/h3_Certificacin de Pagos'),
+	0)
+
+WebUI.delay(2)
 
 WebUI.closeBrowser()
 

@@ -82,16 +82,16 @@ public class CustomFuncions {
 	}
 
 	/**
-	 * Click element
+	 * Verificar el elemento
 	 * @param Objecto capturado en algún repositorio
 	 */
 	@Keyword
 	def clickElement(TestObject to) {
+
 		try {
 			WebElement element = WebUiBuiltInKeywords.findWebElement(to);
 			KeywordUtil.logInfo("Clic")
 			element.click()
-			element.findElement(arg0)
 			KeywordUtil.markPassed("Se ha hecho clic en el elemento")
 		} catch (WebElementNotFoundException e) {
 			KeywordUtil.markFailed("Elemento no encontrado")
@@ -105,10 +105,10 @@ public class CustomFuncions {
 	 */
 	@Keyword
 	public void ElementIsF(TestObject to) {
-		
-		WebElement element = WebUiBuiltInKeywords.findWebElement(to);
 
-		if (element != null) {
+
+
+		if (WebUI.verifyElementNotPresent(findTestObject(to), 0) == true) {
 
 			KeywordUtil.markFailed("El elemento: " + to + " NO debería estar presente")
 		}else {
@@ -132,6 +132,27 @@ public class CustomFuncions {
 		WebUI.setText(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/input_Ingresar_inputUsuario'), GlobalVariable.User)
 
 		WebUI.setText(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/input_Ingresar_inputPass'), GlobalVariable.Password)
+
+		WebUI.click(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/button_Entrar'))
+
+		WebUI.delay(3)
+	}
+
+	/**
+	 * Metodo para el logeo (Puebla) en cada prueba a automatizar
+	 */
+	@Keyword
+	public void LoginPuebla() {
+
+		WebUI.openBrowser('')
+
+		WebUI.navigateToUrl(GlobalVariable.UrlP)
+
+		WebUI.click(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/a_Ingresar'))
+
+		WebUI.setText(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/input_Ingresar_inputUsuario'), GlobalVariable.UserP)
+
+		WebUI.setText(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/input_Ingresar_inputPass'), GlobalVariable.PasswordP)
 
 		WebUI.click(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/button_Entrar'))
 
