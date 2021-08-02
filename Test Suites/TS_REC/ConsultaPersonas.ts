@@ -16,5 +16,11 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/REC/Personas_Consulta</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>db90c79d-b490-4b50-83b0-d6ae9fcba103</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

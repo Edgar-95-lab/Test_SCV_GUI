@@ -35,6 +35,8 @@ WebUI.setText(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control
 
 WebUI.verifyElementClickable(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/button_Consultar'))
 
+CustomKeywords.'com.test.demo.FuncionesGUI.clickElement'(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/button_Consultar'))
+
 WebUI.click(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/button_Consultar'))
 
 WebUI.delay(2)
@@ -46,6 +48,8 @@ WebUI.verifyElementPresent(findTestObject('Repo_CertificaciónDePagos/Page_Siste
 
 WebUI.verifyElementText(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/h3_Certificacin de Pagos'), 
     'No debe mostrarse este elemento')
+
+WebUI.delay(3)
 
 WebUI.closeBrowser()
 

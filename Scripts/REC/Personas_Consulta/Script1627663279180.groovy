@@ -23,7 +23,7 @@ WebUI.click(findTestObject('Repo_REC/Page_Sistema de Control Vehicular/a_REC'))
 
 WebUI.click(findTestObject('Repo_REC/Page_Sistema de Control Vehicular/a_Personas'))
 
-WebUI.setText(findTestObject('Repo_REC/Page_Sistema de Control Vehicular/input_Nombre_vchNombreConsulta'), 'EDGAR')
+WebUI.setText(findTestObject('Repo_REC/Page_Sistema de Control Vehicular/input_Nombre_vchNombreConsulta'), Nombre)
 
 WebUI.verifyElementClickable(findTestObject('Repo_REC/Page_Sistema de Control Vehicular/button_Buscar'))
 

@@ -5,4 +5,11 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>0abaf3e5-aaa9-4d3b-8c1d-1c9311735f43</testCaseGuid>
+   <variable>
+      <defaultValue>'EDGAR'</defaultValue>
+      <description></description>
+      <id>db90c79d-b490-4b50-83b0-d6ae9fcba103</id>
+      <masked>false</masked>
+      <name>Nombre</name>
+   </variable>
 </TestCaseEntity>

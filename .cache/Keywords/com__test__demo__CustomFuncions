@@ -1,12 +1,13 @@
 {
-  "keywordFileContentHash": "8DE4A1A8F4089C67FA2228B2B8DCA1F0",
+  "keywordFileContentHash": "7E17E13B435B70010749840E4EB06EA8",
   "keywordClasses": [
     {
       "name": "com.test.demo.CustomFuncions",
       "keywordMethods": [
         {
           "name": "printHello",
-          "parameters": []
+          "parameters": [],
+          "javadoc": "/**\r\n\t * Imprime en consola un saludo.\r\n\t * @return un saludo\r\n\t */"
         },
         {
           "name": "printName",
@@ -24,11 +25,13 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": "/**\r\n\t * Imprime un saluda más el nombre otorgado.\r\n\t * @param name es el nombre que entra como parámetro.\r\n\t * @return un saludo con nombre\r\n\t */"
         },
         {
           "name": "Login",
-          "parameters": []
+          "parameters": [],
+          "javadoc": "/**\r\n\t * Metodo para el logeo en cada prueba a automatizar\r\n\t */"
         },
         {
           "name": "ElementContains",
@@ -59,10 +62,11 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": "/**\r\n\t * Metodo cuya función es equivalente a contains(\"Cadena\")\r\n\t */"
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }
