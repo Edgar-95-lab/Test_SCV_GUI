@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "BE825BD1210B8A4B1BB74108EB509E5E",
+  "keywordFileContentHash": "266C7F03B3AE16D0B5196D16F53DFDA4",
   "keywordClasses": [
     {
       "name": "com.test.demo.FuncionesWS",
@@ -36,7 +36,7 @@
           ]
         },
         {
-          "name": "verifyElementText",
+          "name": "verifyElementMessage",
           "parameters": [
             {
               "name": "request",

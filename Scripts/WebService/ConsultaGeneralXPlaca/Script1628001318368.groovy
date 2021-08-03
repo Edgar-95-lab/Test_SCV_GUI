@@ -25,3 +25,5 @@ CustomKeywords.'com.test.demo.FuncionesWS.verifyStatusCode'(findTestObject('Repo
 CustomKeywords.'com.test.demo.FuncionesWS.addBasicAuthorizationProperty'(findTestObject('Repo_WebService/PostConsultaGeneralesXPlaca'), 
     'EPEREYRA', 'EPEREYRA123')
 
+CustomKeywords.'com.test.demo.FuncionesWS.verifyElementMessage'(findTestObject('Repo_WebService/PostConsultaGeneralesXPlaca'))
+

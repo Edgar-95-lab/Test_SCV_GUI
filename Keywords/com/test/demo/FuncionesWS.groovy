@@ -4,6 +4,7 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import com.applitools.eyes.StepInfo.ApiUrls
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory
@@ -21,7 +22,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
 import internal.GlobalVariable
 
 import org.openqa.selenium.WebElement
+import org.sikuli.api.API
 import org.openqa.selenium.WebDriver
+import org.eclipse.jdt.internal.compiler.ast.ForeachStatement
 import org.openqa.selenium.By
 
 import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
@@ -66,12 +69,27 @@ class FuncionesWS {
 	 * @return
 	 */
 	@Keyword
-	def verifyElementText(TestObject request) {
+	def verifyElementMessage(TestObject request) {
+		String elemento = "";
 		if (request instanceof RequestObject) {
 			RequestObject requestObject = (RequestObject) request
 			ResponseObject response = WSBuiltInKeywords.sendRequest(requestObject)
 			
-			response.getResponseBodyContent().contains(arg0)
+			for (int i = 0; i < response.getResponseBodySize() ;i++) {
+				
+				if(elemento.equals("\"") && response.getResponseBodyContent().getAt(i+1).equals("\"")) {
+					KeywordUtil.markFailed("Campo vacío")
+					
+				}else {
+					
+					
+				}
+			}
+			
+			println("Respuesta del WS: " + response.getResponseText().replaceAll("[{}]", ""))
+			
+			
+			
 			
 			KeywordUtil.markPassed("Response coinciden con el código deseado")
 			
