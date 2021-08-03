@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "05770132759ABBC8BAAC5E87B0FC901E",
+  "keywordFileContentHash": "11F7A90FD99759E71E35B0D28F7D9230",
   "keywordClasses": [
     {
       "name": "com.test.demo.CustomFuncions",
@@ -50,7 +50,7 @@
               }
             }
           ],
-          "javadoc": "/**\r\n\t * Click element\r\n\t * @param Objecto capturado en algún repositorio\r\n\t */"
+          "javadoc": "/**\r\n\t * Verificar el elemento\r\n\t * @param Objecto capturado en algún repositorio\r\n\t */"
         },
         {
           "name": "ElementIsF",
@@ -75,6 +75,11 @@
           "name": "Login",
           "parameters": [],
           "javadoc": "/**\r\n\t * Metodo para el logeo en cada prueba a automatizar\r\n\t */"
+        },
+        {
+          "name": "LoginPuebla",
+          "parameters": [],
+          "javadoc": "/**\r\n\t * Metodo para el logeo (Puebla) en cada prueba a automatizar\r\n\t */"
         },
         {
           "name": "ElementContains",

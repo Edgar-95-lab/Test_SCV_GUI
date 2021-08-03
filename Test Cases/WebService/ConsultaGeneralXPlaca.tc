@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Caso de validacion de datos correspondiente al usuario con todos los roles.</description>
+   <name>ConsultaGeneralXPlaca</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3afdccf3-ca2b-4005-b060-2ada28a8bf7b</testCaseGuid>
+</TestCaseEntity>
