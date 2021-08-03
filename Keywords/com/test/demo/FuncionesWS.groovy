@@ -71,17 +71,20 @@ class FuncionesWS {
 	@Keyword
 	def verifyElementMessage(TestObject request) {
 		String elemento = "";
+		String aux = "";
 		if (request instanceof RequestObject) {
 			RequestObject requestObject = (RequestObject) request
 			ResponseObject response = WSBuiltInKeywords.sendRequest(requestObject)
 			
 			for (int i = 0; i < response.getResponseBodySize() ;i++) {
-				
-				if(elemento.equals("\"") && response.getResponseBodyContent().getAt(i+1).equals("\"")) {
-					KeywordUtil.markFailed("Campo vacío")
-					
+				elemento+=response.getResponseText().getAt(i)
+				if(elemento.equals('"') && aux.contains('"vchMensaje":""')) {
+					KeywordUtil.markFailed("Campo vchMensaje vacío")
+					//println("\n cadena concatenada: " + aux)
+					break;
 				}else {
-					
+					aux += elemento;
+					elemento = "";
 					
 				}
 			}
@@ -91,7 +94,7 @@ class FuncionesWS {
 			
 			
 			
-			KeywordUtil.markPassed("Response coinciden con el código deseado")
+			
 			
 		} else {
 			KeywordUtil.markFailed(request.getObjectId() + " No es un RequestObject")
