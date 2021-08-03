@@ -1,0 +1,73 @@
+{
+  "keywordFileContentHash": "3B57C288A9FB8C2E05CA90355219EAFA",
+  "keywordClasses": [
+    {
+      "name": "com.test.demo.FuncionesDB",
+      "keywordMethods": [
+        {
+          "name": "connectDB",
+          "parameters": [
+            {
+              "name": "dataFile",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t\t * Open and return a connection to database\n\t\t * @param dataFile absolute file path\n\t\t * @return an instance of java.sql.Connection\n\t\t */"
+        },
+        {
+          "name": "executeQuery",
+          "parameters": [
+            {
+              "name": "queryString",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t\t * execute a SQL query on database\n\t\t * @param queryString SQL query string\n\t\t * @return a reference to returned data collection, an instance of java.sql.ResultSet\n\t\t */"
+        },
+        {
+          "name": "closeDatabaseConnection",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "execute",
+          "parameters": [
+            {
+              "name": "queryString",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t\t * Execute non-query (usually INSERT/UPDATE/DELETE/COUNT/SUM...) on database\n\t\t * @param queryString a SQL statement\n\t\t * @return single value result of SQL statement\n\t\t */"
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

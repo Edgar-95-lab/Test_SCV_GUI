@@ -22,3 +22,6 @@ response = WS.sendRequest(findTestObject('Repo_WebService/PostConsultaGeneralesX
 CustomKeywords.'com.test.demo.FuncionesWS.verifyStatusCode'(findTestObject('Repo_WebService/PostConsultaGeneralesXPlaca'), 
     200)
 
+CustomKeywords.'com.test.demo.FuncionesWS.addBasicAuthorizationProperty'(findTestObject('Repo_WebService/PostConsultaGeneralesXPlaca'), 
+    'EPEREYRA', 'EPEREYRA123')
+

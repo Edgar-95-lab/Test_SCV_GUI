@@ -51,13 +51,32 @@ class FuncionesWS {
 			RequestObject requestObject = (RequestObject) request
 			ResponseObject response = WSBuiltInKeywords.sendRequest(requestObject)
 			if (response.getStatusCode() == expectedStatusCode) {
-				KeywordUtil.markPassed("Response status codes match")
+				KeywordUtil.markPassed("Response coinciden con el código deseado")
 			} else {
-				KeywordUtil.markFailed("Response status code not match. Expected: " +
+				KeywordUtil.markFailed("Response NO coincide con el código deseado. Se esperaba: " +
 						expectedStatusCode + " - Actual: " + response.getStatusCode() )
 			}
 		} else {
-			KeywordUtil.markFailed(request.getObjectId() + " is not a RequestObject")
+			KeywordUtil.markFailed(request.getObjectId() + " No es un RequestObject")
+		}
+	}
+	
+	/**
+	 * Valida que los campos obligatorio como vchMensaje no se encuentren vacíos
+	 * @return
+	 */
+	@Keyword
+	def verifyElementText(TestObject request) {
+		if (request instanceof RequestObject) {
+			RequestObject requestObject = (RequestObject) request
+			ResponseObject response = WSBuiltInKeywords.sendRequest(requestObject)
+			
+			response.getResponseBodyContent().contains(arg0)
+			
+			KeywordUtil.markPassed("Response coinciden con el código deseado")
+			
+		} else {
+			KeywordUtil.markFailed(request.getObjectId() + " No es un RequestObject")
 		}
 	}
 
@@ -81,7 +100,7 @@ class FuncionesWS {
 			for (int i = 0; i < headerProperties.size(); i++) {
 				TestObjectProperty headerField = headerProperties.get(i)
 				if (headerField.getName().equals('Authorization')) {
-					KeywordUtil.logInfo("Found existent basic authorization field. Replacing its value.")
+					KeywordUtil.logInfo("Se encontró el campo de autorización básica existente. Reemplazando su valor.")
 					headerField.setValue(authorizationValue)
 					fieldExist = true
 					break
@@ -93,9 +112,9 @@ class FuncionesWS {
 						ConditionType.EQUALS, authorizationValue, true)
 				headerProperties.add(authorizationProperty)
 			}
-			KeywordUtil.markPassed("Basic authorization field has been added to request header")
+			KeywordUtil.markPassed("Se ha agregado el campo de autorización básica al encabezado de la solicitud")
 		} else {
-			KeywordUtil.markFailed(request.getObjectId() + "is not a RequestObject")
+			KeywordUtil.markFailed(request.getObjectId() + "no es un RequestObject")
 		}
 		return request
 	}
