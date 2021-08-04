@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "B4798C11CC3EF02792A2CE48FFA4FF75",
+  "keywordFileContentHash": "076FB9467FAF06AABFE483262E21D1AD",
   "keywordClasses": [
     {
       "name": "com.test.demo.FuncionesWS",
@@ -34,7 +34,7 @@
               }
             }
           ],
-          "javadoc": "/**\n\t * Send request and verify status code\n\t * @param request request object, must be an instance of RequestObject\n\t * @param expectedStatusCode\n\t * @return a boolean to indicate whether the response status code equals the expected one\n\t */"
+          "javadoc": "/**\r\n\t * Send request and verify status code\r\n\t * @param request request object, must be an instance of RequestObject\r\n\t * @param expectedStatusCode\r\n\t * @return a boolean to indicate whether the response status code equals the expected one\r\n\t */"
         },
         {
           "name": "verifyElementMessage",
@@ -53,7 +53,7 @@
               }
             }
           ],
-          "javadoc": "/**\n\t * Valida que los campos obligatorio como vchMensaje no se encuentren vacíos\n\t * @return\n\t */"
+          "javadoc": "/**\r\n\t * Valida que los campos obligatorio como vchMensaje no se encuentren vacíos\r\n\t * @return\r\n\t */"
         },
         {
           "name": "addBasicAuthorizationProperty",
@@ -98,7 +98,7 @@
               }
             }
           ],
-          "javadoc": "/**\n\t * Add Header basic authorization field,\n\t * this field value is Base64 encoded token from user name and password\n\t * @param request object, must be an instance of RequestObject\n\t * @param username username\n\t * @param password password\n\t * @return the original request object with basic authorization header field added\n\t */"
+          "javadoc": "/**\r\n\t * Add Header basic authorization field,\r\n\t * this field value is Base64 encoded token from user name and password\r\n\t * @param request object, must be an instance of RequestObject\r\n\t * @param username username\r\n\t * @param password password\r\n\t * @return the original request object with basic authorization header field added\r\n\t */"
         }
       ]
     }
