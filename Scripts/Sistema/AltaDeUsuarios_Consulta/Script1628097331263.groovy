@@ -25,11 +25,39 @@ WebUI.click(findTestObject('Repo_Sistema/Page_Sistema de Control Vehicular/a_Usu
 
 WebUI.click(findTestObject('Repo_Sistema/Page_Sistema de Control Vehicular/a_Alta de Usuarios'))
 
-WebUI.delay(2)
-
 WebUI.setText(findTestObject('Repo_Sistema/Page_Sistema de Control Vehicular/input_Nombre_vchNombreConsulta'), 'EDGAR')
 
 WebUI.click(findTestObject('Repo_Sistema/Page_Sistema de Control Vehicular/button_Buscar'))
+
+WebUI.delay(2)
+
+WebUI.doubleClick(findTestObject('Repo_Sistema/Page_Sistema de Control Vehicular/td_MEDINA GAYTAN EDGAR'))
+
+WebUI.doubleClick(findTestObject('Repo_Sistema/Page_Sistema de Control Vehicular/td_4242 2525252525'))
+
+WebUI.click(findTestObject('Repo_Sistema/Page_Sistema de Control Vehicular/button_Modificar Domicilio'))
+
+WebUI.verifyElementNotInViewport(findTestObject('Repo_Sistema/Page_Sistema de Control Vehicular/i_RELACIONES_fa fa-question-circle fa-5x text-primary'), 
+    0)
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Repo_Sistema/Page_Sistema de Control Vehicular/button_Cancelar'))
+
+WebUI.click(findTestObject('Repo_Sistema/Page_Sistema de Control Vehicular/button_Volver a la lista'))
+
+WebUI.click(findTestObject('Repo_Sistema/Page_Sistema de Control Vehicular/input_Control Contacto_form-control valid'))
+
+WebUI.click(findTestObject('Repo_Sistema/Page_Sistema de Control Vehicular/button_Modificar Contacto'))
+
+WebUI.click(findTestObject('Repo_Sistema/Page_Sistema de Control Vehicular/button_Guardar Contacto'))
+
+WebUI.click(findTestObject('Repo_Sistema/Page_Sistema de Control Vehicular/button_Continuar'))
+
+WebUI.scrollToElement(findTestObject('Repo_Sistema/Page_Sistema de Control Vehicular/button_Modificar Contacto'), 0)
+
+WebUI.verifyElementNotInViewport(findTestObject('Repo_Sistema/Page_Sistema de Control Vehicular/button_Volver a la lista'), 
+    0)
 
 WebUI.delay(2)
 

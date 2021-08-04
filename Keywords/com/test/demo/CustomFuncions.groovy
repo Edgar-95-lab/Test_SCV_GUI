@@ -108,12 +108,14 @@ public class CustomFuncions {
 
 
 
-		if (WebUI.verifyElementNotPresent(findTestObject(to), 0) == true) {
-
+		if (WebUI.verifyElementNotInViewport(to, 
+    0) == false) {
 			KeywordUtil.markFailed("El elemento: " + to + " NO debería estar presente")
+			
 		}else {
 
 			KeywordUtil.markPassed("Éxito en la validación")
+			
 		}
 	}
 

@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "79F037FCB48D257372379BB9B3C2BA90",
+  "keywordFileContentHash": "BC749E96E8E8F10FFCC65B1046481B9C",
   "keywordClasses": [
     {
       "name": "com.test.demo.FuncionesDB",
@@ -21,7 +21,7 @@
               }
             }
           ],
-          "javadoc": "/**\r\n\t\t * Open and return a connection to database\r\n\t\t * @param dataFile absolute file path\r\n\t\t * @return an instance of java.sql.Connection\r\n\t\t */"
+          "javadoc": "/**\r\n\t * Open and return a connection to database\r\n\t * @param dataFile absolute file path\r\n\t * @return an instance of java.sql.Connection\r\n\t */"
         },
         {
           "name": "executeQuery",
@@ -40,7 +40,7 @@
               }
             }
           ],
-          "javadoc": "/**\r\n\t\t * execute a SQL query on database\r\n\t\t * @param queryString SQL query string\r\n\t\t * @return a reference to returned data collection, an instance of java.sql.ResultSet\r\n\t\t */"
+          "javadoc": "/**\r\n\t * execute a SQL query on database\r\n\t * @param queryString SQL query string\r\n\t * @return a reference to returned data collection, an instance of java.sql.ResultSet\r\n\t */"
         },
         {
           "name": "closeDatabaseConnection",
@@ -64,7 +64,7 @@
               }
             }
           ],
-          "javadoc": "/**\r\n\t\t * Execute non-query (usually INSERT/UPDATE/DELETE/COUNT/SUM...) on database\r\n\t\t * @param queryString a SQL statement\r\n\t\t * @return single value result of SQL statement\r\n\t\t */"
+          "javadoc": "/**\r\n\t * Execute non-query (usually INSERT/UPDATE/DELETE/COUNT/SUM...) on database\r\n\t * @param queryString a SQL statement\r\n\t * @return single value result of SQL statement\r\n\t */"
         }
       ]
     }
