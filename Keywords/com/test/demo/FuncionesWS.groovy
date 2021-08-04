@@ -63,7 +63,7 @@ class FuncionesWS {
 			KeywordUtil.markFailed(request.getObjectId() + " No es un RequestObject")
 		}
 	}
-	
+
 	/**
 	 * Valida que los campos obligatorio como vchMensaje no se encuentren vacíos
 	 * @return
@@ -75,7 +75,7 @@ class FuncionesWS {
 		if (request instanceof RequestObject) {
 			RequestObject requestObject = (RequestObject) request
 			ResponseObject response = WSBuiltInKeywords.sendRequest(requestObject)
-			
+
 			for (int i = 0; i < response.getResponseBodySize() ;i++) {
 				elemento+=response.getResponseText().getAt(i)
 				if(elemento.equals('"') && aux.contains('"vchMensaje":""')) {
@@ -85,17 +85,10 @@ class FuncionesWS {
 				}else {
 					aux += elemento;
 					elemento = "";
-					
 				}
 			}
-			
+
 			println("Respuesta del WS: " + response.getResponseText().replaceAll("[{}]", ""))
-			
-			
-			
-			
-			
-			
 		} else {
 			KeywordUtil.markFailed(request.getObjectId() + " No es un RequestObject")
 		}

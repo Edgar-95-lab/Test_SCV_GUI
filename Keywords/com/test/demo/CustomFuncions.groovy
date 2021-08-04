@@ -163,9 +163,9 @@ public class CustomFuncions {
 	 * Metodo cuya función es equivalente a contains("Cadena")
 	 */
 	@Keyword
-	public void ElementContains(TestObject to, String cadena) {
+	public void ElementContains(TestObject object, String cadena) {
 
-		if (to.toString().contains(cadena)) {
+		if (object.toString().contains(cadena)) {
 			//Marca el estado aprobado
 			KeywordUtil.markPassed("éxito en el elemento")
 		}else {
