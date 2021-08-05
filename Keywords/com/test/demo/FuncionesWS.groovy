@@ -65,7 +65,7 @@ class FuncionesWS {
 	}
 
 	/**
-	 * Valida que los campos obligatorio como vchMensaje no se encuentren vacíos
+	 * Valida que los campos obligatorios como vchMensaje no se encuentren vacíos
 	 * @return
 	 */
 	@Keyword
