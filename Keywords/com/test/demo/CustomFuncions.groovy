@@ -50,6 +50,40 @@ import org.junit.Test
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
+import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.testobject.SelectorMethod
+
+import com.thoughtworks.selenium.Selenium
+import org.openqa.selenium.firefox.FirefoxDriver
+import org.openqa.selenium.WebDriver
+import com.thoughtworks.selenium.webdriven.WebDriverBackedSelenium
+import static org.junit.Assert.*
+import java.util.regex.Pattern
+import static org.apache.commons.lang3.StringUtils.join
+import org.testng.asserts.SoftAssert
+
+
+
 public class CustomFuncions {
 	/**
 	 * Imprime en consola un saludo.
@@ -104,16 +138,14 @@ public class CustomFuncions {
 	 * Metodo para vefificar la ausencia de un objeto
 	 */
 	@Keyword
-	public void ElementIsF(TestObject to) {
+	public void ElementIsPresent(TestObject to) {
 
-
-
-		if (WebUI.verifyElementNotInViewport(to,
-		0) == false) {
-			KeywordUtil.markFailed("El elemento: " + to + " NO debería estar presente")
+		if (to.find() == null) {
+			
+			KeywordUtil.markFailed("El elemento: " + to + " NO está presente o tarda demasiado en responder")
 		}else {
-
-			KeywordUtil.markPassed("Éxito en la validación")
+			KeywordUtil.markPassed("Éxito en la validación, el elemento: " + to + " se encuentra presente")
+			
 		}
 	}
 
@@ -157,6 +189,34 @@ public class CustomFuncions {
 		WebUI.click(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/button_Entrar'))
 
 		WebUI.delay(3)
+	}
+	
+	public void SelectDate() {
+		SoftAssert softAssertion = new SoftAssert();
+		WebUI.openBrowser('https://www.google.com/')
+		def driver = DriverFactory.getWebDriver()
+		String baseUrl = "https://www.google.com/"
+		selenium = new WebDriverBackedSelenium(driver, baseUrl)
+		selenium.open("https://scvpueblatest.intecproof.com/FormEnvioIngresPlacas#!")
+		selenium.type("id=dtFechaInicio", "")
+		selenium.type("id=dtFechaInicio", ("1900-01-01").toString())
+		selenium.type("id=dtFechaInicio", "")
+		selenium.type("id=dtFechaInicio", ("1900-01-01").toString())
+		selenium.type("id=dtFechaInicio", ("0002-01-01").toString())
+		selenium.type("id=dtFechaInicio", ("0020-01-01").toString())
+		selenium.type("id=dtFechaInicio", ("0202-01-01").toString())
+		selenium.type("id=dtFechaInicio", ("2021-01-01").toString())
+		selenium.type("id=dFechaFin", "")
+		selenium.type("id=dFechaFin", ("1900-01-01").toString())
+		selenium.type("id=dFechaFin", "")
+		selenium.type("id=dFechaFin", ("1900-08-01").toString())
+		selenium.type("id=dFechaFin", ("0002-08-01").toString())
+		selenium.type("id=dFechaFin", ("0020-08-01").toString())
+		selenium.type("id=dFechaFin", ("0202-08-01").toString())
+		selenium.type("id=dFechaFin", ("2021-08-01").toString())
+		selenium.click("xpath=//div[@id='BusquedaFormas']/form")
+		
+		
 	}
 
 	/**

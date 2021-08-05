@@ -33,7 +33,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": "/**\r\n\t * Send request and verify status code\r\n\t * @param request request object, must be an instance of RequestObject\r\n\t * @param expectedStatusCode\r\n\t * @return a boolean to indicate whether the response status code equals the expected one\r\n\t */"
         },
         {
           "name": "verifyElementMessage",
@@ -51,7 +52,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": "/**\r\n\t * Valida que los campos obligatorios como vchMensaje no se encuentren vacíos\r\n\t * @return\r\n\t */"
         },
         {
           "name": "addBasicAuthorizationProperty",
@@ -95,10 +97,11 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": "/**\r\n\t * Add Header basic authorization field,\r\n\t * this field value is Base64 encoded token from user name and password\r\n\t * @param request object, must be an instance of RequestObject\r\n\t * @param username username\r\n\t * @param password password\r\n\t * @return the original request object with basic authorization header field added\r\n\t */"
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

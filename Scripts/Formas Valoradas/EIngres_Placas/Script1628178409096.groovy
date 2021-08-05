@@ -13,7 +13,9 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword as WebUIAbstractKeyword
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import cucumber.runtime.Timeout as Timeout
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
@@ -27,28 +29,33 @@ WebUI.click(findTestObject('Repo_FormasValoradas/Page_Sistema de Control Vehicul
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Repo_FormasValoradas/Page_Sistema de Control Vehicular/input_Tipo de formato'))
-
 CustomKeywords.'com.test.demo.CustomFuncions.clickElement'(findTestObject('Repo_FormasValoradas/Page_Sistema de Control Vehicular/input_Tipo de formato'))
+
+WebUI.click(findTestObject('Repo_FormasValoradas/Page_Sistema de Control Vehicular/input_Tipo de formato'))
 
 WebUI.click(findTestObject('Repo_FormasValoradas/Page_Sistema de Control Vehicular/button_1 - PLACAS AUTO PARTICULAR'))
 
-WebUI.click(findTestObject('Repo_FormasValoradas/Page_Sistema de Control Vehicular/input_Tipo de formato final'))
-
 CustomKeywords.'com.test.demo.CustomFuncions.clickElement'(findTestObject('Repo_FormasValoradas/Page_Sistema de Control Vehicular/input_Tipo de formato final'))
+
+WebUI.click(findTestObject('Repo_FormasValoradas/Page_Sistema de Control Vehicular/input_Tipo de formato final'))
 
 WebUI.click(findTestObject('Repo_FormasValoradas/Page_Sistema de Control Vehicular/button_97 - BOMBEROS'))
 
-WebUI.click(findTestObject('Repo_FormasValoradas/Page_Sistema de Control Vehicular/button_Consultar'))
+WebUI.setText(findTestObject('Repo_FormasValoradas/Page_Sistema de Control Vehicular/input_Fecha de Inicial_dtFechaInicio'), 
+    '01/01/2021')
+
+WebUI.setText(findTestObject('Repo_FormasValoradas/Page_Sistema de Control Vehicular/input_Fecha de Fin_dFechaFin'), '01/07/2021')
 
 WebUI.setText(findTestObject('Repo_FormasValoradas/Page_Sistema de Control Vehicular/input_Fecha de Inicial_dtFechaInicio'), 
-    '01012021')
+    '01/01/2021')
+
+WebUI.setText(findTestObject('Repo_FormasValoradas/Page_Sistema de Control Vehicular/input_Fecha de Fin_dFechaFin'), '01/07/2021')
 
 WebUI.click(findTestObject('Repo_FormasValoradas/Page_Sistema de Control Vehicular/button_Consultar'))
 
-WebUI.setText(findTestObject(null), '01082021')
+WebUI.verifyElementInViewport(findTestObject('Repo_FormasValoradas/Page_Sistema de Control Vehicular/div_Almacen'), 0)
 
-WebUI.delay(2)
+WebUI.delay(5)
 
-WebUI.click(findTestObject('Repo_FormasValoradas/Page_Sistema de Control Vehicular/button_Consultar'))
+CustomKeywords.'com.test.demo.CustomFuncions.refreshBrowser'()
 
