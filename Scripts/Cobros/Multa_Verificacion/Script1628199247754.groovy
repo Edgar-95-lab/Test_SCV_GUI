@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CustomKeywords.'com.test.demo.CustomFuncions.LoginPuebla'()
+CustomKeywords.'com.test.demo.CustomFuncions.Login'()
 
 WebUI.click(findTestObject('Repo_Cobros/MultaVerificación/Page_Sistema de Control Vehicular/a_Cobros'))
 
@@ -32,10 +32,10 @@ CustomKeywords.'com.test.demo.CustomFuncions.clickElement'(findTestObject('Repo_
 WebUI.verifyElementInViewport(findTestObject('Repo_Cobros/MultaVerificación/Page_Sistema de Control Vehicular/div_ID o Control'), 
     10)
 
-WebUI.delay(30, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyElementNotInViewport(findTestObject('Repo_Cobros/MultaVerificación/Page_Sistema de Control Vehicular/div_ERROROcurri un prob'), 
-    0)
+WebUI.verifyElementInViewport(findTestObject('Repo_Cobros/MultaVerificación/Page_Sistema de Control Vehicular/Nohayregistros'), 
+    10)
 
 WebUI.delay(5)
 

@@ -53,9 +53,7 @@ WebUI.setText(findTestObject('Repo_FormasValoradas/Page_Sistema de Control Vehic
 
 WebUI.click(findTestObject('Repo_FormasValoradas/Page_Sistema de Control Vehicular/button_Consultar'))
 
-WebUI.verifyElementInViewport(findTestObject('Repo_FormasValoradas/Page_Sistema de Control Vehicular/div_Almacen'), 0)
+WebUI.verifyElementInViewport(findTestObject('Repo_FormasValoradas/Page_Sistema de Control Vehicular/div_Almacen'), 10)
 
 WebUI.delay(5)
-
-CustomKeywords.'com.test.demo.CustomFuncions.refreshBrowser'()
 

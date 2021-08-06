@@ -19,28 +19,19 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'com.test.demo.CustomFuncions.Login'()
 
-WebUI.click(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/a_Certificacin de Pagos'))
+WebUI.click(findTestObject('Repo_Vehículos/Page_Sistema de Control Vehicular/a_Vehculos'))
 
-WebUI.verifyElementClickable(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/a_Certificacion de Pagos'))
+WebUI.click(findTestObject('Repo_Vehículos/Page_Sistema de Control Vehicular/a_Consulta'))
 
-WebUI.click(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/a_Certificacion de Pagos'))
+WebUI.click(findTestObject('Repo_Vehículos/Page_Sistema de Control Vehicular/a_Consulta Infracciones'))
 
-WebUI.setText(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/input_ID del vehculo_form-control valid'), 
-    '40780')
+WebUI.delay(2)
 
-WebUI.setText(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/input_Ao del pago_form-control valid'), 
-    '2021')
+WebUI.setText(findTestObject('Repo_Vehículos/Page_Sistema de Control Vehicular/input_Serie_vchSerie'), 'WD3YE4A96JP412158')
 
-CustomKeywords.'com.test.demo.CustomFuncions.clickElement'(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/button_Consultar'))
+WebUI.click(findTestObject('Repo_Vehículos/Page_Sistema de Control Vehicular/button_Buscar'))
 
-WebUI.click(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/button_Consultar'))
-
-WebUI.verifyElementPresent(findTestObject('Repo_Cobros/SubCDFotoinfracciones/button_Seleccionar'), 0)
-
-WebUI.click(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/button_Limpiar'))
-
-WebUI.verifyElementNotPresent(findTestObject('Repo_CertificaciónDePagos/Page_Sistema de Control Vehicular/h3_Certificacin de Pagos'), 
-    0)
+WebUI.verifyElementNotInViewport(findTestObject('Repo_Vehículos/Page_Sistema de Control Vehicular/ERROR'), 5)
 
 WebUI.delay(2)
 

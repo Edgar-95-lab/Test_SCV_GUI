@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "6AFBC66173D922E5E7E122D5D8CC9A6C",
+  "keywordFileContentHash": "0292F6A63AF10BD384FD1003EB5690B5",
   "keywordClasses": [
     {
       "name": "com.test.demo.CustomFuncions",
@@ -53,7 +53,7 @@
           "javadoc": "/**\r\n\t * Verificar el elemento\r\n\t * @param Objecto capturado en algún repositorio\r\n\t */"
         },
         {
-          "name": "ElementIsF",
+          "name": "ElementIsPresent",
           "parameters": [
             {
               "name": "to",

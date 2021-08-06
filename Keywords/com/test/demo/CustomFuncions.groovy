@@ -141,11 +141,10 @@ public class CustomFuncions {
 	public void ElementIsPresent(TestObject to) {
 
 		if (to.find() == null) {
-			
+
 			KeywordUtil.markFailed("El elemento: " + to + " NO está presente o tarda demasiado en responder")
 		}else {
 			KeywordUtil.markPassed("Éxito en la validación, el elemento: " + to + " se encuentra presente")
-			
 		}
 	}
 
@@ -190,7 +189,7 @@ public class CustomFuncions {
 
 		WebUI.delay(3)
 	}
-	
+
 	public void SelectDate() {
 		SoftAssert softAssertion = new SoftAssert();
 		WebUI.openBrowser('https://www.google.com/')
@@ -215,8 +214,6 @@ public class CustomFuncions {
 		selenium.type("id=dFechaFin", ("0202-08-01").toString())
 		selenium.type("id=dFechaFin", ("2021-08-01").toString())
 		selenium.click("xpath=//div[@id='BusquedaFormas']/form")
-		
-		
 	}
 
 	/**

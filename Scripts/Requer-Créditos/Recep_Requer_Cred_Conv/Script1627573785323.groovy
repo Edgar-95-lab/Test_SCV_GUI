@@ -36,8 +36,10 @@ WebUI.click(findTestObject('Repo_Requer-Créditos/RecepciónDReq_Cred_Conv/butto
 
 WebUI.delay(2)
 
-WebUI.verifyElementText(findTestObject('Repo_Requer-Créditos/RecepciónDReq_Cred_Conv/h5_Ocurri un error en la lectura de los archivos, por favor verifique'), 
-    '')
+WebUI.verifyElementNotInViewport(findTestObject('Repo_Requer-Créditos/Page_Sistema de Control Vehicular/alerta_error al cargar'), 
+    2)
+
+WebUI.delay(3)
 
 WebUI.closeBrowser()
 
