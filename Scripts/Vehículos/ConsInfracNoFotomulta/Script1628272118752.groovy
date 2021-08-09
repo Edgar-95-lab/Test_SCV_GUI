@@ -31,7 +31,7 @@ WebUI.setText(findTestObject('Repo_Vehículos/Page_Sistema de Control Vehicular/
 
 WebUI.click(findTestObject('Repo_Vehículos/Page_Sistema de Control Vehicular/button_Buscar'))
 
-WebUI.verifyElementNotInViewport(findTestObject('Repo_Vehículos/Page_Sistema de Control Vehicular/ERROR'), 5)
+WebUI.verifyElementNotInViewport(findTestObject('Repo_Vehículos/Page_Sistema de Control Vehicular/ERROR'), 0)
 
 WebUI.delay(2)
 

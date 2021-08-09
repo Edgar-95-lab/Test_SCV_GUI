@@ -27,8 +27,13 @@ WebUI.setText(findTestObject('Repo_Cobros/SubCDFotoinfracciones/input_Placa_vchP
 
 WebUI.click(findTestObject('Repo_Cobros/SubCDFotoinfracciones/button_Buscar'))
 
-WebUI.click(findTestObject('Repo_Cobros/SubCDFotoinfracciones/button_Seleccionar'))
+WebUI.doubleClick(findTestObject('Repo_Cobros/Page_Sistema de Control Vehicular/td9'))
 
-WebUI.verifyElementText(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/h1_Sistema de Control Vehicular'), 
-    'Sistema de Control Vehicular')
+WebUI.scrollToElement(findTestObject('Repo_Cobros/Page_Sistema de Control Vehicular/Generar'), 0)
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Repo_Cobros/Page_Sistema de Control Vehicular/Eliminar'))
+
+WebUI.verifyElementNotInViewport(findTestObject('Repo_Cobros/Page_Sistema de Control Vehicular/td9'), 5)
 

@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CustomKeywords.'com.test.demo.CustomFuncions.Login'()
+CustomKeywords.'com.test.demo.CustomFuncions.LoginPuebla'()
 
 WebUI.click(findTestObject('Repo_REC/Page_Sistema de Control Vehicular/a_REC'))
 
