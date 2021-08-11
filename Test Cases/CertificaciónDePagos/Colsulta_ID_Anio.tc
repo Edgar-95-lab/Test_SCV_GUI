@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Prueba automatizada para la consulta de certificación de pagos mediante un ID y un año de pago respectivamente.</description>
-   <name>Colsulta_ID_Anio</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>e21aaee0-5ac9-4dbe-96dc-ee0558849de4</testCaseGuid>
-</TestCaseEntity>

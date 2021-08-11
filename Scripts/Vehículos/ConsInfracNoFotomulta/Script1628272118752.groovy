@@ -27,13 +27,15 @@ WebUI.click(findTestObject('Repo_Vehículos/Page_Sistema de Control Vehicular/a_
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('Repo_Vehículos/Page_Sistema de Control Vehicular/input_Serie_vchSerie'), 'WD3YE4A96JP412158')
+WebUI.setText(findTestObject('Repo_Vehículos/Page_Sistema de Control Vehicular/input_Serie_vchSerie'), 'WF0WS4NT3JTB56838')
+
+WebUI.comment('3N1EB31S37K311977')
 
 WebUI.click(findTestObject('Repo_Vehículos/Page_Sistema de Control Vehicular/button_Buscar'))
 
-WebUI.verifyElementNotInViewport(findTestObject('Repo_Vehículos/Page_Sistema de Control Vehicular/ERROR'), 0)
+WebUI.verifyElementNotVisibleInViewport(findTestObject('Repo_Vehículos/Page_Sistema de Control Vehicular/ERROR'), 0)
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 WebUI.closeBrowser()
 

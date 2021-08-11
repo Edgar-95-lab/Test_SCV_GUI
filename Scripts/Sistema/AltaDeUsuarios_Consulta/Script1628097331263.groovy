@@ -37,6 +37,8 @@ WebUI.doubleClick(findTestObject('Repo_Sistema/Page_Sistema de Control Vehicular
 
 WebUI.click(findTestObject('Repo_Sistema/Page_Sistema de Control Vehicular/button_Modificar Domicilio'))
 
+println('El ícono mostrado en el cuadro de diálogo es incorrecto, ya que no se está realizando alguna interrogativa...')
+
 WebUI.verifyElementNotInViewport(findTestObject('Repo_Sistema/Page_Sistema de Control Vehicular/i_RELACIONES_fa fa-question-circle fa-5x text-primary'), 
     0)
 
@@ -55,6 +57,10 @@ WebUI.click(findTestObject('Repo_Sistema/Page_Sistema de Control Vehicular/butto
 WebUI.click(findTestObject('Repo_Sistema/Page_Sistema de Control Vehicular/button_Continuar'))
 
 WebUI.scrollToElement(findTestObject('Repo_Sistema/Page_Sistema de Control Vehicular/button_Modificar Contacto'), 0)
+
+WebUI.click(findTestObject('Repo_Sistema/Page_Sistema de Control Vehicular/button_Volver a la lista'))
+
+println('El botón: Volver a la lista, no presenta ninguna función, además de ser innecesario debido a que sólo existe un contacto agregado...')
 
 WebUI.verifyElementNotInViewport(findTestObject('Repo_Sistema/Page_Sistema de Control Vehicular/button_Volver a la lista'), 
     0)
