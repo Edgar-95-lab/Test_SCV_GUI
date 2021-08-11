@@ -85,24 +85,6 @@ import org.testng.asserts.SoftAssert
 
 
 public class CustomFuncions {
-	/**
-	 * Imprime en consola un saludo.
-	 * @return un saludo
-	 */
-	@Keyword
-	def printHello() {
-		println("\nHola a todos.\n")
-	}
-
-	/**
-	 * Imprime un saluda más el nombre otorgado.
-	 * @param name es el nombre que entra como parámetro.
-	 * @return un saludo con nombre
-	 */
-	@Keyword
-	def printName(String name) {
-		println("Hola:" + name)
-	}
 
 	/**
 	 * Recargar la página (función que se hace al presionar F5) 
@@ -188,32 +170,6 @@ public class CustomFuncions {
 		WebUI.click(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/button_Entrar'))
 
 		WebUI.delay(3)
-	}
-
-	public void SelectDate() {
-		SoftAssert softAssertion = new SoftAssert();
-		WebUI.openBrowser('https://www.google.com/')
-		def driver = DriverFactory.getWebDriver()
-		String baseUrl = "https://www.google.com/"
-		selenium = new WebDriverBackedSelenium(driver, baseUrl)
-		selenium.open("https://scvpueblatest.intecproof.com/FormEnvioIngresPlacas#!")
-		selenium.type("id=dtFechaInicio", "")
-		selenium.type("id=dtFechaInicio", ("1900-01-01").toString())
-		selenium.type("id=dtFechaInicio", "")
-		selenium.type("id=dtFechaInicio", ("1900-01-01").toString())
-		selenium.type("id=dtFechaInicio", ("0002-01-01").toString())
-		selenium.type("id=dtFechaInicio", ("0020-01-01").toString())
-		selenium.type("id=dtFechaInicio", ("0202-01-01").toString())
-		selenium.type("id=dtFechaInicio", ("2021-01-01").toString())
-		selenium.type("id=dFechaFin", "")
-		selenium.type("id=dFechaFin", ("1900-01-01").toString())
-		selenium.type("id=dFechaFin", "")
-		selenium.type("id=dFechaFin", ("1900-08-01").toString())
-		selenium.type("id=dFechaFin", ("0002-08-01").toString())
-		selenium.type("id=dFechaFin", ("0020-08-01").toString())
-		selenium.type("id=dFechaFin", ("0202-08-01").toString())
-		selenium.type("id=dFechaFin", ("2021-08-01").toString())
-		selenium.click("xpath=//div[@id='BusquedaFormas']/form")
 	}
 
 	/**
