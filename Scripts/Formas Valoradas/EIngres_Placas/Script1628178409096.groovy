@@ -21,6 +21,8 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'com.test.demo.CustomFuncions.LoginPuebla'()
 
+WebUI.maximizeWindow()
+
 WebUI.click(findTestObject('Repo_FormasValoradas/Page_Sistema de Control Vehicular/a_Formas Valoradas'))
 
 WebUI.click(findTestObject('Repo_FormasValoradas/Page_Sistema de Control Vehicular/a_Comunicacin Ingres'))

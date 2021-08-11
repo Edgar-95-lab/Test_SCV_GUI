@@ -19,6 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'com.test.demo.CustomFuncions.Login'()
 
+WebUI.maximizeWindow()
+
 WebUI.click(findTestObject('Repo_Cobros/SubCDFotoinfracciones/a_Cobros'))
 
 WebUI.click(findTestObject('Repo_Cobros/SubCDFotoinfracciones/a_Cobro de Fotoinfracciones'))

@@ -19,6 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'com.test.demo.CustomFuncions.Login'()
 
+WebUI.maximizeWindow()
+
 WebUI.click(findTestObject('Repo_Vehículos/Page_Sistema de Control Vehicular/a_Vehculos'))
 
 WebUI.click(findTestObject('Repo_Vehículos/Page_Sistema de Control Vehicular/a_Consulta'))
