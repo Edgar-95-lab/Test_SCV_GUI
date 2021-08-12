@@ -139,6 +139,8 @@ public class CustomFuncions {
 		WebUI.openBrowser('')
 
 		WebUI.navigateToUrl(GlobalVariable.Url)
+		
+		WebUI.maximizeWindow()
 
 		WebUI.click(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/a_Ingresar'))
 
@@ -160,6 +162,8 @@ public class CustomFuncions {
 		WebUI.openBrowser('')
 
 		WebUI.navigateToUrl(GlobalVariable.UrlP)
+		
+		WebUI.maximizeWindow()
 
 		WebUI.click(findTestObject('Repo_Login/Page_Sistema de Control Vehicular/a_Ingresar'))
 

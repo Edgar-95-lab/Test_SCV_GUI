@@ -1,33 +1,9 @@
 {
-  "keywordFileContentHash": "3871FBD348A21D1BAD78678E8C2A46AE",
+  "keywordFileContentHash": "C2E05A97A0C6B61BF4C83C6929A25DDF",
   "keywordClasses": [
     {
       "name": "com.test.demo.CustomFuncions",
       "keywordMethods": [
-        {
-          "name": "printHello",
-          "parameters": [],
-          "javadoc": "/**\r\n\t * Imprime en consola un saludo.\r\n\t * @return un saludo\r\n\t */"
-        },
-        {
-          "name": "printName",
-          "parameters": [
-            {
-              "name": "name",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.lang.String",
-                "unresolvedClassName": "String",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": false,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            }
-          ],
-          "javadoc": "/**\r\n\t * Imprime un saluda más el nombre otorgado.\r\n\t * @param name es el nombre que entra como parámetro.\r\n\t * @return un saludo con nombre\r\n\t */"
-        },
         {
           "name": "refreshBrowser",
           "parameters": [],
